@@ -1,10 +1,8 @@
 @import "var.scss";
 @import "font_face.scss";
-
 *{
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -37,9 +35,6 @@ a {
     .inflex {
         display: block;
         margin: auto;
-        background: $transp_black;
-        padding: $med;
-        border-radius: $micro;
     }
 }
 header {
@@ -66,20 +61,19 @@ header {
                 margin: 0 $med;
                 a { 
                     display: block;
-                    border-bottom: 2px solid transparent;
                     height: $navbar_height;
                     color: $dark_color;
                     &:hover {
                         color: $main_color;
                         border-bottom: 2px solid $main_color;
-                    }
-                }
-            }
-        }
-    }
-}
+                    } // a hover 
+                } // a
+            } // li 
+        } // ul
+    } // nav
+} // header
 section {
-    padding: $big $med;
+    padding: $huge $med;
     p {
         text-align: center;
     }
@@ -90,16 +84,20 @@ section {
     background-attachment: fixed;
     background-size: cover;
     margin-top: $navbar_height;
-    height: 70vh;
+    height: 90vh;
     min-height: $vp_width;
     padding: $med;
-    
-    * { z-index: 2; }
+    div { 
+        z-index: 2; 
+        background: $transp_black;
+        padding: $med;
+        border-radius: $micro;
+    }
 }
 #short_prez {
     background: $dark_color;
     padding: $huge 0;
-    &:before {
+    &:before, &:after {
         content: "";
         display: block;
         width: 100%;
@@ -107,8 +105,10 @@ section {
         background: $dark_color; 
         transform: skewY(2deg) translateY($before_px);
     }
+    &:after {
+        transform: skewY(2deg) translateY(-$before_px);
+    }
 }
-
 #mail_zone {
     background: $light_color;
     color: $dark_color;
