@@ -6,16 +6,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Ubuntu;
+    font-family: $font_p;
 }
 h1 {
     margin: 0 $med;
-    font-family: Roboto;
+    font-family: $font_h;
 }
 h2, h3, h4, h5, h6 {
     color: $main_color;
     text-align: center;
-    font-family: Roboto;
+    font-family: $font_h;
 }
 p {
     display: block;
@@ -92,6 +92,13 @@ section {
         background: $transp_black;
         padding: $med;
         border-radius: $micro;
+        img {
+            display: block;
+            width: $pic_med;
+            height: $pic_med;
+            margin: auto;
+            border-radius: $total_radius;
+        }
     }
 }
 #short_prez {
@@ -115,11 +122,12 @@ section {
 }
 .button {
     display: block;
+    font-family: $font_h;
     max-width: $btn_width;
     margin: auto;
     text-align: center;
-    color: $light_color;
-    background: $sec_color;
+    color: $dark_color;
+    background: $btn_color;
     padding: 10px;
     border-radius: $micro;
     transition: all $transform_time $bezier;

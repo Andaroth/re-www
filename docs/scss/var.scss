@@ -1,12 +1,16 @@
 // Palette
-$background : url("../img/bg1.jpg");
+$background : url("../img/bg3.jpg");
 $dark_color : #252525;
 $light_color : #FFF;
 $main_color: orange;
 $sec_color: #EADFBE;
 $transp_white: rgba(255,255,255,.7);
 $transp_black: rgba(0,0,0,.7);
+$btn_color: #FFF;
 
+// Fonts
+$font_h: Roboto;
+$font_p: Ubuntu;
 // Valeurs absolues
 $navbar_height : 50px;
 $micro : 3px;
@@ -19,6 +23,11 @@ $vp_width : 600px;
 $total_radius : 50%;
 $btn_width: 250px;
 $before_px: -135px;
+$pic_micro: 50px;
+$pic_med: 100px;
+$pic_norm: 200px;
+$pic_big: 400px;
+$pic_huge: 600px;
 
 // Transforms && transitions
 $transform_time : .5s;
