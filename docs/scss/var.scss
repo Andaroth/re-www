@@ -1,4 +1,25 @@
-$bg_color : #252525;
-$p_color : #FFF;
-$main_color: #CGCFAD;
+// Palette
+$background : url("../img/bg1.jpg");
+$dark_color : #252525;
+$light_color : #FFF;
+$main_color: orange;
 $sec_color: #EADFBE;
+$transp_white: rgba(255,255,255,.7);
+$transp_black: rgba(0,0,0,.7);
+
+// Valeurs absolues
+$navbar_height : 50px;
+$micro : 3px;
+$med : 10px;
+$mid : $med;
+$big : 50px;
+$huge : 100px;
+// Valeurs design
+$vp_width : 600px;
+$total_radius : 50%;
+$btn_width: 250px;
+$before_px: -135px;
+
+// Transforms && transitions
+$transform_time : .5s;
+$bezier : cubic-bezier(.68,-.55,.27,1.55);
