@@ -29,11 +29,12 @@ section p { text-align: center; }
 
 #home_index { background: url("../img/bg3.jpg"); background-position: top; background-attachment: fixed; background-size: cover; margin-top: 50px; height: 90vh; min-height: 600px; padding: 10px; }
 #home_index div { z-index: 2; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 3px; }
-#home_index div img { display: block; width: 100px; height: 100px; margin: auto; border-radius: 50%; }
+#home_index div img { display: block; width: 70px; height: 70px; margin: auto; border-radius: 50%; }
 
 #short_prez { background: #252525; padding: 100px 0; }
 #short_prez:before, #short_prez:after { content: ""; display: block; width: 100%; height: 100px; background: #252525; transform: skewY(2deg) translateY(-135px); }
 #short_prez:after { transform: skewY(2deg) translateY(135px); }
+#short_prez a.becodelink, #short_prez a img { display: block; width: 70px; margin: auto; }
 
 #mail_zone { background: #FFF; color: #252525; }
 

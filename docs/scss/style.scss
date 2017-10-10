@@ -115,6 +115,11 @@ section {
     &:after {
         transform: skewY(2deg) translateY(-$before_px);
     }
+    a.becodelink, a img {
+        display: block;
+        width: $pic_med;
+        margin: auto;
+    }
 }
 #mail_zone {
     background: $light_color;
